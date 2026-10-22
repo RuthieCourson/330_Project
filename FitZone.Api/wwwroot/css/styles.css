@@ -1,0 +1,35 @@
+:root {
+  --fz-primary: #e4572e;
+  --fz-dark: #1d2731;
+  --fz-light: #f6f7f9;
+}
+
+body { background: var(--fz-light); }
+
+.fz-nav { background: var(--fz-dark); }
+.fz-nav .nav-link.active { color: #fff; border-bottom: 2px solid var(--fz-primary); }
+
+.btn-fz { background: var(--fz-primary); border-color: var(--fz-primary); color: #fff; }
+.btn-fz:hover, .btn-fz:focus { background: #c8441f; border-color: #c8441f; color: #fff; }
+.text-fz { color: var(--fz-primary); }
+
+.hero {
+  background: linear-gradient(120deg, var(--fz-dark) 0%, #34495e 100%);
+  color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.class-card { transition: transform .15s, box-shadow .15s; cursor: pointer; }
+.class-card:hover { transform: translateY(-3px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.12); }
+
+.badge-group   { background: #2a9d8f; }
+.badge-private { background: #6f42c1; }
+
+.stat-card .stat-value { font-size: 1.8rem; font-weight: 700; }
+
+.session-row.full { opacity: .6; }
+
+.auth-card { max-width: 460px; margin: 2rem auto; }
+
+.table td, .table th { vertical-align: middle; }
